@@ -1,5 +1,7 @@
 import sqlite3
 
+#part 1
+
 file = 'dbase.db'
 connection = sqlite3.connect(file)
 print(connection)
@@ -65,15 +67,20 @@ while end == False:
         elif 1 <= int(decision) <= 8:
             Uinfo = input("Please enter the corresponding info (ex. if you chose name, enter name): ")
             cursor.execute(f"select * from customers4 where {userInfo[decision-1]}='{Uinfo}'")
-            e = cursor.fetchall()
-            print(e)
+            print(cursor.fetchall())
         else:
             print("That is not a valid input.")
-    else:
+    else: 
         print("That is not a valid input.")
 
-#pets
-
+#part 2
+"""
 end2 = False
 while end2 == False:
-    option = input("\nWhat would you like to do?\nExit: 0\nID: 1\nSearch for a customer: 2\n")
+    option = input("\nWhat would you like to do?\nExit: 0\nID: 1\nData: 2\n")
+    if option == 0:
+        end2 = False
+    elif option == 1:
+        searchId = input("Enter Uid: ")
+
+"""
