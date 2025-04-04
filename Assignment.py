@@ -74,7 +74,7 @@ while end == False:
         print("That is not a valid input.")
 
 #part 2
-"""
+
 end2 = False
 while end2 == False:
     option = input("\nWhat would you like to do?\nExit: 0\nID: 1\nData: 2\n")
@@ -82,5 +82,4 @@ while end2 == False:
         end2 = False
     elif option == 1:
         searchId = input("Enter Uid: ")
-
-"""
+    
